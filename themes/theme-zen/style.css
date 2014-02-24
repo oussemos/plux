@@ -1,0 +1,457 @@
+/**
+ * Zen Mountain - a theme for PluXml
+ *
+ * Copyright 2011 Guillaume Brocker
+ */
+ 
+body {
+	/*background: #f8f8f8 url(images/background.jpg);*/
+	background: #f8f8f8 url(images/checked-background.png);
+	color: #555555;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	width: 940px;
+	margin: 40px auto;
+	padding: 0;
+	box-shadow: 0 0 30px #888;
+}
+
+* a {
+	color: #45679a;
+	text-decoration: none;
+}
+
+* a:hover {
+	color: #45679a;
+	text-decoration: underline;
+}
+
+h2 {
+	color: #333333;
+}
+
+p {
+	text-align: justify;
+	line-height: 160%;
+}
+
+.feed {
+	background: url(images/rss.png) no-repeat left center;
+	padding-left: 18px;
+}
+
+#title, #menu, #content, #footer {
+	border: 1px solid #aaa;
+}
+
+#title {
+	background: url("images/header.jpg") no-repeat;
+	border-bottom: none;
+	margin: 0;
+	padding: 0;
+	height: 200px;
+}
+
+#title h1 {
+	margin: 0;
+	padding: 100px 0 30px 0;
+	font-size: 380%;
+	text-align: center;
+	line-height: 0;
+}
+
+#title a {
+	color: #247;
+	text-decoration: none;
+	text-shadow: -1px 1px 5px #fff, 1px 1px 5px #fff, -1px 0 5px #fff, 1px 0 5px #fff;
+}
+
+#title a:hover {
+	color: #45679a;
+}
+
+#sub-title {
+	line-height: 0;
+	margin: 0;
+	padding: 35px 30px 35px 30px;
+	font-style: italic;
+	font-size: 130%;
+	text-align: center;
+	color: #fafaff;
+}
+
+/**
+ * Menu
+ */
+#menu {
+	margin: 0;
+	padding: 15px 0;
+	text-align: center;
+	line-height: 100%;
+	border-top: none;
+	border-bottom-style: dotted;
+	background: #eee;
+}
+
+#menu a {
+	color: #333333;
+}
+
+#menu a:hover, #menu .active {
+	color: #45679a;
+	text-decoration: underline;
+}
+
+#menu li {
+	font-size: 120%;
+	letter-spacing: 1px;
+	list-style: none;
+	display: inline;
+	padding: 15px;
+}
+
+
+#content {
+	background: white;
+	border-top: none;
+	border-bottom: none;
+	margin: 0;
+	padding: 20px 0 0 0;
+}
+
+
+
+/**
+ * Page & sidebar
+ */
+#page, #page-full-width, #sidebar {
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ * Page details
+ */
+#page, #page-full-width {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+#page {
+	width: 600px;
+}
+
+#page-full-width {
+	padding-bottom: 40px;
+}
+
+
+/**
+ * Articles, #static, #comments and #form commons
+ */
+.article, #comments, form#comment {
+	width: 600px;
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+
+/**
+ * Article details
+ */
+.article .title {
+	margin-top: 15px;
+}
+
+.article .title h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 160%;
+}
+
+.article .title .date {
+}
+
+.article .title a {
+	color: #333333;
+}
+
+.article .title a:hover {
+	color: #45679a;
+}
+
+.article img {
+	box-shadow: 0 1px 5px 1px #555;
+	border-radius: 5px;
+}
+
+.article blockquote {
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 40px;
+	padding-right: 40px;
+	background: url(images/quote.png) no-repeat left top;
+}
+
+.author, .date, .more, .comments, .tags, .categories, .filter, #footer {
+	color: #888888;
+	font-size: 90%;
+	line-height: 200%;
+	margin: 0;
+	padding: 0;
+}
+
+.date {
+	display: inline;
+	margin: 0;
+	line-height: 100%;
+}
+
+.author {
+	display: none;
+}
+
+.author a, .date a, .more a, .comments a, .tags a, .categories a, #sidebar a, #footer a {
+	color: #888888;
+	text-decoration: underline;
+}
+
+.author a:hover, .date a:hover, .more a:hover, .comments a:hover, .tags a:hover, .categories a:hover, #sidebar a:hover, #footer a:hover {
+	color: #45679a;
+	text-decoration: underline;
+}
+
+.more, .comments {
+	display: inline;
+	padding-right: 20px;
+}
+
+.more, .comments, .categories {
+	padding-top: 5px;
+}
+
+
+/**
+ * Pagination details
+ */
+ 
+#pagination {
+	display: table;
+	line-height: 100%;
+	padding: 0;
+	margin-bottom: 40px;
+}
+
+.p_first, .p_prev, .p_page, .p_next, .p_last {
+	display: table-cell;
+}
+
+.p_first, .p_prev {
+	padding-right: 15px;
+}
+
+.p_page {
+	width: 100%;
+	text-align: center;
+}
+
+.p_next, .p_last {
+	padding-left: 15px;
+}
+
+
+/*
+ * Comments details
+ */
+#comments {
+	color: #888888;
+}
+ 
+#comments h2 {
+	color: #333333;
+	margin-top: 0;
+}
+
+.comment {
+	font-size: 90%;
+	padding: 0;
+	margin-bottom: 20px;
+	border: 1px solid #f0f0f0;
+	background: #fbfbfb;
+	font-family: "Droid Sans Mono";
+	border-radius: 5px;
+}
+
+.comment p {
+	padding: 20px 30px;
+	margin: 0;
+}
+
+.comment .author, .comment .date {
+	background: #f0f0f0;
+	display: table-cell;
+	line-height: 100%;
+	padding: 10px 30px;
+	margin: 0;
+}
+
+.comment .author {
+	width: 100%;
+}
+
+.comment .author, .comment .date, .comment .author a {
+	font-size: 100%;
+	color: #666666;
+}
+
+.comment .author a:hover {
+	color: #45679a;
+}
+
+#comments .type-admin {
+	border-bottom-width: 5px;
+	border-color: #e0e0e0;
+	background: #f0f0f0;
+	color: #666666;
+}
+
+#comments .type-admin .author, #comments .type-admin .date {
+	background: #e0e0e0;
+}
+
+
+/**
+ * Form details
+ */
+
+form p, textarea {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+#form h2 {
+	line-height: 100%;
+	margin-top: 0;
+	color: #333333;
+}
+
+#form #message {
+	font-weight: bold;
+	color: #cd4567;
+}
+
+fieldset {
+	background: #f8f8f8;
+	border: 1px solid #e8e8e8;
+	margin: 0;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+label {
+	display: block;
+	float: left;
+	text-align: right;
+	width: 25%;
+	padding: 3px 0;
+	margin-right: 10px;
+}
+
+input[name=name], input[name=site], input[name=mail] {
+	line-height: 100%;
+}
+
+textarea {
+	width: 100%;
+}
+
+input[type=submit], input[type=reset] {
+	width: 100px;
+	height: 30px;
+}
+
+#capcha input {
+	margin-left: 10px;
+}
+
+.capcha-letter, .capcha-word {
+	font-weight: bold;
+}
+
+p#buttons {
+	text-align: right;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+
+/**
+ * Sidebar details
+ */
+ 
+#sidebar {
+	font-size: 90%;
+	padding-left: 20px;
+	padding-right: 35px;
+}
+
+#sidebar .section {
+	margin-bottom: 30px;
+}
+
+#sidebar p {
+	text-align: left;
+}
+
+#sidebar .tag {
+	margin-right: 8px;
+}
+
+#sidebar h3 {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 115%;
+	color: #333333;
+	letter-spacing: 1px;
+	margin-top: 0;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 5px 0;
+}
+
+#sidebar .active {
+	color: #45679a;
+}
+
+#sidebar .noactive {
+	text-decoration: none;
+}
+
+
+/**
+ * Footer details
+ */
+ 
+#footer {
+	clear: both;
+	font-size: 80%;
+	margin: 0;
+	padding: 0;
+	background: #ccc;
+	border-top-style: dotted;
+}
+
+#footer p {
+	margin: 0;
+	line-height: 250%;
+	text-align: center;
+}
